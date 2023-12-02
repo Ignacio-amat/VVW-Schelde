@@ -1,0 +1,23 @@
+.asideMenu{
+    background-color: #52688F;
+    height: 100%;
+}
+
+.divActive{
+    background-color: #E3E8F6;
+    padding: 20px 0 20px 0;
+}
+
+.topic {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.topic:hover {
+    background-color: #E3E8F6;
+    transform: scale(1);
+}

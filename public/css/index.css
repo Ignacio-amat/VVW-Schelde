@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+.categoriesList{
+    cursor: pointer;
+    padding: 20px;
+    height: 100%;
+}
+
+.category{
+    height: 100%;
+    box-shadow:2px 2px 2px 2px #a1a1b2;
+    width: 200px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.categoryBlock{
+    -webkit-backdrop-filter: blur(10px);
+    gap: 12px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    width: 90%;
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    transition: background 0.2s ease-out 100ms;
+    background: #E3E7F1;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.name{
+    font-size: 26px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+
+.categoryText {
+    text-align: center;
+    height: 50px;
+}
+
+.categoryScroll{
+    background-color: #52688F;;
+    width: 90%;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    right: 20px;
+}
+
+::-webkit-scrollbar-track{
+    width: 2px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #afaeae;
+    border-radius: 20px;
+}
+
+.categoryOverview {
+    position: sticky;
+}
+
+.image{
+    width: 70px;
+    height: 68px;
+}
+
+.imagePlaceHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    background: #B3C1DB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.editImage{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.buttonAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button{
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    width: 100px;
+    transition: padding 0.2s;
+}
+
+.button:hover{
+    padding: 14px;
+    cursor: pointer;
+}
+
+.edit{
+    background: orange;
+}
+
+.delete{
+    background: red;
+}
+
+.togle-checkboxes {
+    border-radius: 10px;
+    border:none ;
+    background: #B3C1DB;
+    width:70px;
+    font-family: Inter;
+    height: 40px;
+    font-size: 17px;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: scale 0.2s ease-in-out;
+}
+
+.deleteAllDiv {
+    align-self: end;
+    margin-bottom: 10px;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.deleteAllButton{
+    border-radius: 10px;
+    border:none ;
+    background: #ff0000;
+    width:70px;
+    font-family: Inter;
+    height: 40px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.togle-checkboxes:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.popup {
+    position: fixed;
+    display: none;
+    margin-top: 25%;
+    margin-left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #52688F;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 400px;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+
+.popup button {
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    cursor: pointer;
+    background-color: #E3E7F1;
+    transition: ease-in-out 0.3s;
+}
+
+.popup button:hover {
+    background-color: #0052a3;
+    color: white;
+}
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.nameAndDescription a {
+    color: black;
+    text-decoration: none;
+}
+.nameAndDescription a:hover {
+    color: #2563eb;
+    transition: ease-in-out 0.3s;
+}
+
+.questionEditing {
+    background-color: #52688F !important;
+    color: white !important;
+    transition: ease-in-out 0.2s;
+    font-weight: bold;
+}
+
+.questionEditing:hover {
+    background-color: #B3C1DB !important;
+    color: black !important;
+}
+
+.listingQuestions {
+    background-color: #E3E8F6;
+    color: black;
+    width: 90%;
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    transition: background 0.2s ease-out 100ms;
+}
+
+.questionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+}
+

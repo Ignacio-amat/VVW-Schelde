@@ -1,0 +1,288 @@
+.graphContainer {
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #c6c6df;
+}
+
+.questionBlock:hover {
+    transform: scale(0.96);
+    cursor: pointer;
+}
+
+.pageHeader {
+    margin: 0;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-primary);
+    background:var(--color-bg) 2s;
+}
+
+/* Graph section */
+.graphSection {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 95%;
+    height: 80%;
+    background: #52688F;
+    border-radius: 10px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* questions sidebar */
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    width: 300px;
+    height: 90%;
+    overflow-y: auto;
+    background-color: #E3E8F6;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+    padding: 20px;
+    overflow-x: hidden;
+
+}
+
+/* question block */
+.questionBlock {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* question text */
+.questionText {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* overview */
+.overview {
+    border-radius: 5px;
+    background-color: #B3C1DB;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* overview text */
+.overviewText {
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    font-family: Inter;
+}
+
+/* scrolling section */
+.scrollingSection {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* graph */
+.graphDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#E3E8F6;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    width: 80%;
+    height: 95%;
+    max-width: 75%;
+    max-height: 96%;
+}
+
+.content {
+    align-items: center;
+}
+
+.dropbtn {
+    margin-top: 10px;
+    background: #adb9d4;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    align-self: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px
+    0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background: #8d99b8;
+
+}
+
+
+tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+thead{
+    position: sticky;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+tbody{
+    padding: 10px   ;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    color: black;
+}
+
+.dateHeader{
+    background-color: #B3C1DB;
+    width: 30%;
+    font-size: 22px;
+    color: white;
+}
+
+.answerHeader{
+    color: white;
+    background-color: #B3C1DB;
+    font-size: 22px;
+    text-align: left;
+    width: 70%;
+}
+
+.dateCells {
+    border-bottom: 1px solid black;
+    width: 30%;
+    text-align: center;
+}
+
+.answersCells{
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.graphAndSoringOptions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.soring-options{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 10px;
+    width: 150px;
+    background-color:#B3C1DB;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.years, .months{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.year, .month{
+    font-family: Inter;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding-left: 30%;
+    width: 60px;
+    border-radius: 10px;
+    background: #E3E8F6;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.month:hover{
+    transform:scale(0.9);
+    cursor: pointer;
+}
+
+.year:hover{
+    transform:scale(0.9);
+    cursor: pointer;
+}
+
+.errorMessages {
+    position: absolute;
+    margin-top: 5.4%;
+    color: red;
+    padding: 5px;
+    background-color: #E3E8F6;
+    border-radius: 15px;
+    font-family: Inter;
+    transition: width 0.2s ease-in-out;
+}

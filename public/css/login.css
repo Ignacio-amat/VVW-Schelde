@@ -1,0 +1,123 @@
+.text-above-input {
+    text-align: center;
+    color: #ffffff;
+    /* Add any other necessary styles for the text above input */
+}
+
+.input-field-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.input-field {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-field.is-invalid {
+    border-color: #ff0000; /* Red border for invalid input field */
+}
+
+.invalid-feedback {
+    color: #ff0000; /* Red error message color */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.input-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 9px;
+}
+
+.password-strength {
+    margin-top: 10px; /* Adjust as needed to add spacing between password field and strength indicator */
+    /* Add any other necessary styles for the password strength indicator */
+}
+
+.strength-meter {
+    /* Add styles for the strength meter (e.g., a progress bar or colored indicator) */
+}
+
+.strength-text {
+    font-size: 12px;
+    /* Add any other necessary styles for the strength text */
+}
+
+.login-container {
+    /* Add any necessary styles for the login button container */
+}
+
+.forgot-password-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 200px;
+}
+.input-field-container {
+    position: relative;
+}
+
+.input-field-container .input-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.forgot-password-container .forgot-password {
+    color: #FFFFFF;
+    text-align: left;
+}
+.forgot-password {
+    margin-left: 12px;
+}
+
+.login-container .btn-primary {
+    position: relative;
+    padding-right: 32px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 20px;
+    color: #FFFFFF;
+    background: #FFFFFF;
+}
+
+.btn-primary {
+    width: 40px;
+}
+.login-container .login-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+}
+
+.rectangle {
+    margin-bottom: 150px;
+}

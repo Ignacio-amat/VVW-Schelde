@@ -1,0 +1,128 @@
+.container {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    margin: auto;
+}
+.list-container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    align-items: center;
+    column-gap: 5%;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.category-container, .search-container {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 0.5% 0 0.5% 0;
+    background: #52688F;
+    border-radius: 10px;
+}
+.category-header, .category-questions, .search-bar, .search-results{
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    background: #E3E7F1;
+    border-radius: 10px;
+}
+.category-header {
+    flex: 0.07;
+    display: flex;
+    margin-top: 3%;
+}
+.category-header img {
+    max-height: 30px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.category-header h2 {
+    font-size: math;
+    font-weight: bold;
+}
+.category-questions, .search-results {
+    flex: 0.9;
+    margin-bottom: 3%;
+    overflow-y: auto;
+}
+.search-bar {
+    flex:0.07;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%
+}
+#searchInput {
+    flex: 0.8;
+    width: 100%;
+    margin-left: 3%;
+    background: #E3E7F1;
+    border: none;
+}
+.question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    background: #BDC6D9;
+    border-radius: 10px;
+    padding: 2px;
+}
+.question-text {
+    flex: 0.9;
+    padding: 5px;
+}
+.actionBtn {
+    flex: 0.1;
+    padding: 0;
+    border: none;
+    background: none no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.actionBtn:hover {
+    transform: scale(1.2);
+}
+.search-results .actionBtn {
+    background-image: url("../assets/icons/general/green-plus-icon.png");
+}
+.category-questions .actionBtn {
+    background-image: url('../assets/icons/general/red-delete-icon.png');
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+}
+.button-container button {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.save-button {
+    background-color: #24C324;
+}
+.cancel-button {
+    background-color: red;
+}
+button[type="submit"]:hover {
+    background-color: #0052a3;
+    color: #fff;
+}

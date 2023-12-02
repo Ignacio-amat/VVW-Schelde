@@ -1,0 +1,178 @@
+.formSection {
+    background-color: #52688F;
+    padding: 15px 40px 40px 40px;
+    border-radius: 10px;
+    margin: 10px;
+    width:  70%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.formSection h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.formSection input[type="text"] {
+    background-color: #E3E7F1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.dataHeader {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color:white;
+}
+
+.formSection select {
+    background-color: #E3E7F1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+#type {
+    margin-bottom: 10px;
+}
+.inputField {
+    background: #E3E7F1;
+    border-radius: 8px;
+}
+
+#option-container {
+    width: 100%;
+}
+#add-option-btn {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #E3E7F1;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: normal;
+}
+#options {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.option-rmv-button {
+    margin-left: 3px;
+    background-size: contain;
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    background: url("../assets/icons/general/red-delete-icon.png") no-repeat center;
+}
+
+#searchResults {
+    max-height: 17vh;
+    overflow-y: scroll;
+    background-color: #E3E7F1;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+#followUpQuestions {
+    margin-top: 10px;
+}
+.following-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 2px 5px;
+    background: #BDC6D9;
+    border-radius: 5px;
+}
+.f-question-text {
+    flex: 0.9;
+}
+.fq-btn {
+    flex: 0.05;
+    margin-top: 5px;
+    border: none;
+    background-size: contain;
+    background: none no-repeat center;
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.fq-btn:hover {
+    transform: scale(1.2);
+}
+#searchResults .fq-btn {
+    background-image: url("../assets/icons/general/green-plus-icon.png");
+}
+#selectedQuestions .fq-btn {
+    background-image: url("../assets/icons/general/red-delete-icon.png");
+}
+#selectedQuestions {
+    max-height:16vh;
+    overflow-y: scroll;
+    background-color: #E3E7F1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.followup-container {
+    background-color: #52688F;
+    padding: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+.condition-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+.conditions {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+}
+.conditions select {
+    width: fit-content;
+    max-height: fit-content;
+}
+#action-btn {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #24C324;
+}
+#action-btn:hover {
+    background-color: #0052a3;
+    color: #fff;
+}

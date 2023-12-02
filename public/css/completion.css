@@ -1,0 +1,34 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.completion {
+    background-color: #E3E8F6;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #52688F;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #52688F;
+    line-height: 1.5;
+}
